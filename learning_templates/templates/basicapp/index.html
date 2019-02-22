@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+{% extends 'basicapp/base.html' %}
+{% load customtemplates %}
+  {% block body_block %}
+    <h1>WELCOME TO INDEX PAGE</h1>
+    <h1>{{text|replace:'Hello'}}</h1>
+    <h1>{{number|add:50}}</h1>
+  {% endblock %}
